@@ -530,5 +530,16 @@
 
     <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
-    
+
+      <!-- The default value for transition animation scale found in developer settings.
+     1.0 corresponds to 1x animator scale, 0 means that there will be no transition
+     animations. Note that this is only a default and will be overridden by a
+     user-set value if toggled by settings so the "Transition animation scale" setting
+     should also be hidden if intended to be permanent. -->
+    <item name="config_appTransitionAnimationDurationScaleDefault" format="float" type="dimen">0.8</item>
+
+    <!-- Speed up the animations -->
+    <fraction name="def_window_animation_scale">80%</fraction>
+    <fraction name="def_window_transition_scale">80%</fraction>
+      
 </resources>
