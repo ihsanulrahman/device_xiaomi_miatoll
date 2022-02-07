@@ -16,7 +16,7 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 2160
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
