@@ -69,6 +69,9 @@ ro.vendor.perf.scroll_opt=true
 # Render
 debug.cpurend.vsync=false
 
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
 # WFD
 persist.debug.wfd.enable=1
 vendor.sys.video.disable.ubwc=1
