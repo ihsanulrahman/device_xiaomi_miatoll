@@ -56,6 +56,9 @@ persist.mm.enable.prefetch=true
 # Pre-Rendering
 ro.vendor.perf.scroll_opt=true
 
+# Render
+debug.cpurend.vsync=false
+
 # WFD
 persist.debug.wfd.enable=1
 vendor.sys.video.disable.ubwc=1
