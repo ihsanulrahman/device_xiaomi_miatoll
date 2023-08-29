@@ -13,6 +13,17 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+namespace_imports = [
+    'device/xiaomi/sm6250-common',
+    'hardware/qcom-caf/sm8150',
+    'hardware/qcom-caf/wlan',
+    'hardware/xiaomi',
+    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
+]
+
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/camera/camxoverridesettings.txt': blob_fixup()
         .regex_replace('0x10082', '0')
@@ -35,6 +46,7 @@ module = ExtractUtilsModule(
     'sm6250-common',
     'xiaomi',
     blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
