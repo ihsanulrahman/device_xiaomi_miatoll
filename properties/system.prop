@@ -4,9 +4,6 @@ audio.offload.min.duration.secs=30
 # CNE
 persist.vendor.cne.feature=1
 
-# Display
-debug.performance.tuning=1
-
 # DPM
 persist.vendor.dpm.feature=11
 
