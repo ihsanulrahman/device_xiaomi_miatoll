@@ -3,6 +3,13 @@ audio.offload.min.duration.secs=30
 
 # Blur
 ro.launcher.blur.appLaunch=0
+ro.sf.blurs_are_expensive=1
+persist.sys.sf.disable_blurs=true
+enable_blurs_on_windows=0
+disableBlurs=true
+ro.sf.blurs_are_caro=1
+ro.miui.has_real_blur=0
+persist.sys.background_blur_supported=false
 
 # Camera
 persist.sys.cam.skip_detach_image=true
