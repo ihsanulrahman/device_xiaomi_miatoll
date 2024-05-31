@@ -338,6 +338,38 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 
+# Camera sensors (curtana)
+vendor/lib64/camera/com.qti.tuned.sunny_s5kgm2.bin
+
+# Camera sensors (curtana & gram)
+vendor/lib64/camera/com.qti.sensormodule.ofilm_gc02m1_filter.bin
+vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgm2.bin
+vendor/lib64/camera/com.qti.sensormodule.sunny_imx582.bin
+vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgm2.bin
+vendor/lib64/camera/com.qti.tuned.ofilm_gc02m1.bin
+vendor/lib64/camera/com.qti.tuned.ofilm_gc02m1_filter.bin
+vendor/lib64/camera/com.qti.tuned.ofilm_s5kgm2.bin
+vendor/lib64/camera/com.qti.tuned.sunny_imx582.bin
+
+# Camera sensors (curtana & joyeuse)
+vendor/lib64/camera/com.qti.sensormodule.sunny_hi556.bin
+vendor/lib64/camera/com.qti.tuned.sunny_hi556.bin
+
+# Camera sensors (excalibur & joyeuse)
+vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgw1.bin
+vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgw1_mirrorflip.bin
+vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1.bin
+vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1_mirrorflip.bin
+vendor/lib64/camera/com.qti.tuned.sunny_gc02m1.bin
+vendor/lib64/camera/com.qti.tuned.sunny_s5kgw1.bin
+
+# Camera sensors (excalibur)
+vendor/lib64/camera/com.qti.sensormodule.sunny_ov32a1q.bin
+vendor/lib64/camera/com.qti.tuned.sunny_ov32a1q.bin
+
+# Camera sensors (joyeuse)
+vendor/lib64/camera/com.qti.tuned.ofilm_s5kgw1.bin
+
 # Camera provider
 vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
@@ -775,6 +807,12 @@ vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
+
+# NFC
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
+vendor/libnfc-nxp_RF.conf
 
 # Permissions
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
