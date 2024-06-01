@@ -1,4 +1,0 @@
-# All unpinned blobs below are extracted from joyeuse-user 11 RKQ1.200826.002 V12.0.1.0.RJZMIXM release-keys
-
-# NFC
-vendor/lib/libpn553_fw.so|a8e29cc3ebb2e0df0fb505fc2da9c69a015680fb
