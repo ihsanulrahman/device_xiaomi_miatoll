@@ -24,6 +24,7 @@ BLAZE_BUILD_TYPE := OFFICIAL
 BLAZE_MAINTAINER := clarencelol
 WITH_GAPPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+-include vendor/blaze-priv/keys/keys.mk
 
 PRODUCT_NAME := blaze_miatoll
 PRODUCT_DEVICE := miatoll
