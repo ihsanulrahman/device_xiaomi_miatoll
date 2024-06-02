@@ -113,15 +113,15 @@ echo 740000 > /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz
 
 # configure governor settings for little cluster
 echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
 echo 1248000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
 echo 576000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
 # configure governor settings for big cluster
 echo "schedutil" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
-echo 0 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us
-echo 0 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us
+echo 20000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
 echo 1267200 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq
 echo 652800 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
 
@@ -210,8 +210,21 @@ do
 done
 
 # cpuset parameters
-echo 0-5 > /dev/cpuset/background/cpus
-echo 0-5 > /dev/cpuset/system-background/cpus
+echo 0-7 > /dev/cpuset/top-app/cpus
+echo 0-5,7 > /dev/cpuset/foreground/cpus
+echo 4-5 > /dev/cpuset/background/cpus
+echo 2-5 > /dev/cpuset/system-background/cpus
+echo 2-5 > /dev/cpuset/restricted/cpus
+
+# schedtune parameters
+echo 1 > /dev/stune/camera-daemon/schedtune.prefer_idle
+echo 0 > /dev/stune/camera-daemon/schedtune.boost
+echo 1 > /dev/stune/foreground/schedtune.prefer_idle
+echo 0 > /dev/stune/foreground/schedtune.boost
+echo 0 > /dev/stune/schedtune.prefer_idle
+echo 0 > /dev/stune/schedtune.boost
+echo 1 > /dev/stune/top-app/schedtune.prefer_idle
+echo 1 > /dev/stune/top-app/schedtune.boost
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost

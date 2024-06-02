@@ -39,6 +39,10 @@ on init
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     write /sys/block/sda/queue/iosched/group_idle 0
 
+    # report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,com.miHoYo.,libunity.so,libfb.so,liblogic.so,libssgamesdkcronet.so,libil2cpp.so,com.activision."
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 on early-fs
     start vold
 
