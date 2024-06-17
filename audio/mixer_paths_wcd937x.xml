@@ -402,10 +402,10 @@
     <ctl name="HPHR Volume" value="20" />
     <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
 
-    <ctl name="TX_DEC0 Volume" value="84" />
-    <ctl name="TX_DEC1 Volume" value="84" />
-    <ctl name="TX_DEC2 Volume" value="84" />
-    <ctl name="TX_DEC3 Volume" value="84" />
+    <ctl name="TX_DEC0 Volume" value="92" />
+    <ctl name="TX_DEC1 Volume" value="92" />
+    <ctl name="TX_DEC2 Volume" value="92" />
+    <ctl name="TX_DEC3 Volume" value="92" />
     <ctl name="TX_DEC4 Volume" value="84" />
     <ctl name="TX_DEC5 Volume" value="84" />
     <ctl name="TX_DEC6 Volume" value="84" />
@@ -2931,7 +2931,7 @@
     </path>
 
     <path name="headset-mic">
-        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="TX_DEC0 Volume" value="92" />
         <path name="amic2" />
     </path>
 
@@ -3231,7 +3231,7 @@
         <ctl name="TX DMIC MUX2" value="DMIC1" />
         <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
         <ctl name="TX DMIC MUX3" value="DMIC3" />
-        <ctl name="TX_DEC3 Volume" value="84" />
+        <ctl name="TX_DEC3 Volume" value="92" />
     </path>
 
     <path name="speaker-tmic">
@@ -3242,7 +3242,7 @@
         <ctl name="TX DMIC MUX2" value="DMIC0" />
         <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
         <ctl name="TX DMIC MUX3" value="DMIC3" />
-        <ctl name="TX_DEC3 Volume" value="84" />
+        <ctl name="TX_DEC3 Volume" value="92" />
     </path>
 
     <path name="voice-speaker-tmic">
@@ -3258,7 +3258,7 @@
         <ctl name="TX DMIC MUX2" value="DMIC1" />
         <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
         <ctl name="TX DMIC MUX3" value="DMIC3" />
-        <ctl name="TX_DEC3 Volume" value="84" />
+        <ctl name="TX_DEC3 Volume" value="92" />
         <ctl name="TX_AIF1_CAP Mixer DEC4" value="1" />
         <ctl name="TX DMIC MUX4" value="DMIC4" />
     </path>
