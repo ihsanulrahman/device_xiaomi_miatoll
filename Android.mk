@@ -105,4 +105,8 @@ $(EGL_64_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@
 	$(hide) ln -sf egl/$(notdir $@) $@
 
+ALL_DEFAULT_INSTALLED_MODULES += \
+	$(EGL_32_SYMLINKS) \
+	$(EGL_64_SYMLINKS)
+
 endif
