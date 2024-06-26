@@ -1165,6 +1165,7 @@ vendor/lib64/sensors.ssc.so
 
 # Thermal
 vendor/bin/thermal-engine
+vendor/etc/thermal-engine.conf
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalfeature.so
 

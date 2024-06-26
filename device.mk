@@ -438,13 +438,22 @@ PRODUCT_BOOT_JARS += \
 
 # Thermal HAL
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.mock
+    android.hardware.thermal@2.0-service.qti
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-curtana.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-curtana.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-excalibur.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-excalibur.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-gram.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-gram.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-joyeuse.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-joyeuse.conf
+    $(LOCAL_PATH)/thermal/thermal-engine-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-map-curtana.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map-curtana.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-normal-curtana.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal-curtana.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-camera-curtana.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-camera-curtana.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-map-excalibur.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map-excalibur.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-normal-excalibur.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal-excalibur.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-camera-excalibur.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-camera-excalibur.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-map-gram.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map-gram.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-normal-gram.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal-gram.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-camera-gram.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-camera-gram.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-map-joyeuse.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map-joyeuse.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-normal-joyeuse.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal-joyeuse.conf \
+    $(LOCAL_PATH)/thermal/thermal-engine-camera-joyeuse.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-camera-joyeuse.conf
 
 # TimeKeep
 PRODUCT_PACKAGES += \
