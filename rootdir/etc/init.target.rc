@@ -182,11 +182,6 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     group system
     disabled
 
-service vendor.thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine-${ro.boot.hwname}.conf
-   class main
-   user root
-   group root
-
 service vendor.sensors_fixup /vendor/bin/init.sensors_fixup.sh
     class main
     user system
