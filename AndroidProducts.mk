@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The infinityOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_miatoll.mk
+    $(LOCAL_DIR)/infinity_miatoll.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_miatoll-user \
-    lineage_miatoll-userdebug \
-    lineage_miatoll-eng
+    infinity_miatoll-user \
+    infinity_miatoll-userdebug \
+    infinity_miatoll-eng

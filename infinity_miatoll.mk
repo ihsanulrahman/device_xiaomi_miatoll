@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2022 The LineageOS Project
+# Copyright (C) 2021-2022 The infinityOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from miatoll device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
@@ -19,12 +19,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Lineage
+# infinity
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := true
--include vendor/lineage-priv/keys/keys.mk
 
-PRODUCT_NAME := lineage_miatoll
+PRODUCT_NAME := infinity_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
