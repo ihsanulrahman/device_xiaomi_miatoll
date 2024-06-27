@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Project Blaze stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+# Inherit some common Project infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from miatoll device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
@@ -19,14 +19,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# ProjectBlaze
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := clarencelol
-WITH_GAPPS := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
--include vendor/blaze-priv/keys/keys.mk
 
-PRODUCT_NAME := blaze_miatoll
+PRODUCT_NAME := infinity_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
@@ -38,3 +32,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="miatoll_global-user 12 SKQ1.211019.001 V14.0.3.0.SJZMIXM release-keys"
 
 BUILD_FINGERPRINT := Redmi/miatoll_global/miatoll:12/RKQ1.211019.001/V14.0.3.0.SJZMIXM:user/release-keys
+
+# INFINITY-X FLAGS
+INFINITY_BUILD_TYPE := OFFICIAL
+INFINITY_MAINTAINER := iHSAN
+WITH_GAPPS := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_QUICK_TAP := true
+USE_MOTO_CALCULATOR := true
+TARGET_BUILD_VIMUSIC := true
