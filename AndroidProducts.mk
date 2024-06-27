@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_miatoll.mk
+    $(LOCAL_DIR)/voltage_miatoll.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_miatoll-user \
-    blaze_miatoll-userdebug \
-    blaze_miatoll-eng
+    voltage_miatoll-ap1a-user \
+    voltage_miatoll-ap1a-userdebug \
+    voltage_miatoll-ap1a-eng
