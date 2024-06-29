@@ -221,3 +221,17 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit proprietary blobs
 include vendor/xiaomi/miatoll/BoardConfigVendor.mk
+
+# Sign the build
+TARGET_BUILD_FULLY_SIGN := true
+include vendor/parasite/signatures/BoardConfigSign.mk
+
+TARGET_AVB_KEY_PATH := $(PARASITE_AVB_KEY_PATH)
+# Differs what bit (e.g. 2048) you selected for key generation
+TARGET_AVB_ALGORITHM := SHA256_RSA2048
+
+BOARD_AVB_KEY_PATH := $(TARGET_AVB_KEY_PATH)
+BOARD_AVB_ALGORITHM :=  $(TARGET_AVB_ALGORITHM)
+
+BOARD_AVB_VENDOR_BOOT_KEY_PATH := $(TARGET_AVB_KEY_PATH)
+BOARD_AVB_VENDOR_BOOT_ALGORITHM := $(TARGET_AVB_ALGORITHM)

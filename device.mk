@@ -504,3 +504,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Inherit proprietary targets
 $(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
+
+# Sign the Build
+TARGET_BUILD_FULLY_SIGN := true
