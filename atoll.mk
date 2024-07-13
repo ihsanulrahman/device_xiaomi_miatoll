@@ -91,11 +91,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display
 
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    memtrack.atoll
-
-PRODUCT_PACKAGES += \
     disable_configstore \
     gralloc.atoll \
     hwcomposer.atoll \
@@ -103,7 +98,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.memtrack-service
 
 # DRM
 PRODUCT_PACKAGES += \
