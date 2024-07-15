@@ -13,6 +13,9 @@ persist.arm64.memtag.system_server=off
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # Display
 debug.sf.enable_hwc_vds=0
 debug.performance.tuning=1
