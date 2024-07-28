@@ -380,6 +380,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.target.rc \
     fstab.qcom \
+    fstab.zram \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \
