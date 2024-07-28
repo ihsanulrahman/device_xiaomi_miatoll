@@ -1,2 +1,6 @@
+# EGL
+ro.egl.blobcache.multifile=true
+ro.egl.blobcache.multifile_limit=33554432
+
 # Memory optimizations
 ro.config.avoid_gfx_accel=true
