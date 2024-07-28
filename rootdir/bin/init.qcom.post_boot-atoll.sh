@@ -51,6 +51,18 @@ echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
 echo 8 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
 echo 0 > /sys/devices/system/cpu/cpu6/core_ctl/enable
 
+# Set swappiness based the device's RAM size
+    RamStr=$(cat /proc/meminfo | grep MemTotal)
+    RamMB=$((${RamStr:16:8} / 1024))
+
+    if [ $RamMB -le 4096 ]; then
+        echo 150 > /proc/sys/vm/swappiness
+    elif [ $RamMB -le 6144 ]; then
+        echo 100 > /proc/sys/vm/swappiness
+    else
+        echo 60 > /proc/sys/vm/swappiness
+    fi
+
 # Setting b.L scheduler parameters
 # default sched up and down migrate values are 95 and 85
 echo 65 > /proc/sys/kernel/sched_downmigrate
