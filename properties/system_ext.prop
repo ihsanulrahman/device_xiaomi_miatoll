@@ -1,0 +1,2 @@
+# Memory optimizations
+ro.config.avoid_gfx_accel=true
