@@ -17,3 +17,12 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 har
 git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-21 hardware/sony/timekeep
 
 sleep 1
+
+# Miui Camera & OP Dolby 
+echo -e "${color}Cloning Miui Camera${end}"
+git clone https://github.com/ihsanulrahman/vendor_xiaomi_miuicamera --depth=1 vendor/xiaomi/miuicamera
+
+echo -e "${color}Cloning OP Dolby${end}"
+git clone https://github.com/veux-frost-testzone/hardware_dolby hardware/dolby
+
+sleep 1
