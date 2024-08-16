@@ -8,6 +8,11 @@ from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
 )
+from extract_utils.fixups_lib import (
+    lib_fixup_remove,
+    lib_fixups,
+    lib_fixups_user_type,
+)
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -23,6 +28,16 @@ namespace_imports = [
     'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/display',
 ]
+
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    ('vendor.qti.imsrtpservice@3.0',): lib_fixup_vendor_suffix,
+}
 
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/camera/camxoverridesettings.txt': blob_fixup()
@@ -46,6 +61,7 @@ module = ExtractUtilsModule(
     'sm6250-common',
     'xiaomi',
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
