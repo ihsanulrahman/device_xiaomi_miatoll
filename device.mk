@@ -527,3 +527,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Inherit proprietary targets
 $(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
+
+# Sign 
+-include vendor/voltage-priv/keys/keys.mk
