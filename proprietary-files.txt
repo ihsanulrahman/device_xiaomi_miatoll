@@ -602,33 +602,33 @@ vendor/lib/libkernelmanager.so|09e05782cae3b8c5910d069c9d79eb4e58f2801d
 vendor/lib64/libkcl.so|505c6488d7c2c34ac6bcc578e6e90098553e5f4f
 vendor/lib64/libkernelmanager.so|6e34cfed1b61ef27ac3740cf477e1ed836695513
 
-# Graphics (Adreno) - from hollywood 12 51093690067200150
+# Graphics (Adreno) - from hollywood 12 51093690107400150
 vendor/lib/egl/eglSubDriverAndroid.so|5be0b296a33210fd6189362ef4908604a7dd8d22
 vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so|29734846f1cc784eb6af7cb3cfb9ac1304d3f124
 vendor/lib/egl/libGLESv1_CM_adreno.so|cf09f13fdfbee1e7c74361884e3b9e5dbf58c9f7
-vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so|cff596fd1d9dc508a4edbd13c77f5272706cae1a
+vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so|3d08a765bc9b30464b680cb720c45174a2e01b1f
 vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so|b72c1297bed4951159c135b5508f41e150fd94e2
-vendor/lib/egl/libq3dtools_esx.so|d58743993278a23f255e8c971a80612ec6182cae
-vendor/lib/hw/vulkan.adreno.so|7b39f7666e1b5366ea3e24631cd59b84c73147f6
+vendor/lib/egl/libq3dtools_esx.so|0682a22430c2147116482a69424b86de9b15aeb2
+vendor/lib/hw/vulkan.adreno.so|0796ac7c3c87cfd93178febf0e9bb290e4afd1c9
 vendor/lib/libC2D2.so|6e27b2e338ff3edd5c192a45f9bea74b0d171909
-vendor/lib/libadreno_utils.so|1357a4b0cb3c213ef5a8a7400fa9f5f6bee4bdab
+vendor/lib/libadreno_utils.so|edf8b3e36a802c592d67f6ddcbc61adea46a59c1
 vendor/lib/libc2d30_bltlib.so|fc078600251e05be3cb029986a5c1f05e8b088ab
-vendor/lib/libgsl.so|8d6c0c12ed68775af6b239a10ca027ff0b078ceb
-vendor/lib/libllvm-glnext.so|27ff0ea3c701292658f2e5f73fb71235366a67cf
-vendor/lib/libllvm-qgl.so|499824fd09b13946eeeb11369c824ee73a099f19
+vendor/lib/libgsl.so|5b9ec0a6497ef901160bb5182d5f27fe229402d3
+vendor/lib/libllvm-glnext.so|addec6e80a89cca29928ef2d2ce9ffeaf072b8b2
+vendor/lib/libllvm-qgl.so|353777af09b984e955928e49a12af7aa2de1b5cd
 vendor/lib64/egl/eglSubDriverAndroid.so|8dacc77dbd933f110e97978795551ebe206b2bac
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|7f0577ef7f9b6d9347d021101150c2caf70e6551
 vendor/lib64/egl/libGLESv1_CM_adreno.so|785fa5a72057320717bb741f17c2a3d3881bd571
-vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|d0749e647e0a3d5eeb5f3bd39264a0d2661b930e
+vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|9c857259ac122f38815d2450d4d88097fb6ad20d
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|2116a8d9d89164a174d885360b18194ce89ce7fe
-vendor/lib64/egl/libq3dtools_esx.so|1fa2f935dc438898d024eb62152f4cbd8e3da8cd
-vendor/lib64/hw/vulkan.adreno.so|b7853a354c0438174cecdf6fb5389c6eb327fb61
+vendor/lib64/egl/libq3dtools_esx.so|8b4354b47b0cc853880e402c59e8975f07fbdded
+vendor/lib64/hw/vulkan.adreno.so|4e0ba99d2beebce4500a438460ffc922b603c172
 vendor/lib64/libC2D2.so|fafaeb8e08cc62dbad97d1c73af524ae47806c7c
-vendor/lib64/libadreno_utils.so|77e682e77deb141dc2b8a32af532a57c4540e7fa
+vendor/lib64/libadreno_utils.so|198ba1b01ac7a8aa79d083d5348b83d8f5d66cba
 vendor/lib64/libc2d30_bltlib.so|cbd2c5b449d568f36ef13cd9fa6774e07db4265b
-vendor/lib64/libgsl.so|8a3b1e4f1e2cd3b93a1bee04ab870d029c181919
-vendor/lib64/libllvm-glnext.so|f23c31d00d3e9a9dd21d066db1f88389b09c5ba1
-vendor/lib64/libllvm-qgl.so|0709b9cfb77d662b413c2cd3c41d3d9e26ae4927
+vendor/lib64/libgsl.so|7fbcde3c2c63303b4a30915f1bb038d5504139ca
+vendor/lib64/libllvm-glnext.so|ecd3ed30cada1d3fb819e722bb097578358a1b95
+vendor/lib64/libllvm-qgl.so|97ffd556bd115a0979fba85011a356f0b34c0e5f
 
 # Graphics (SDM)
 vendor/etc/SVIConfig.xml
