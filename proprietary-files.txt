@@ -5,7 +5,6 @@
 
 # Current blobs with ELF checks disabled:
 # imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
-# libOmxVideoDSMode depend on libOmxCore, which is a gnu makefile target
 
 # ACDB
 vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Bluetooth_cal.acdb
@@ -695,25 +694,6 @@ vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 
-# Media
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libdsd2pcm.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxWmaDec.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-
 # Media (Codec2) - from mojito
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|83c2effb6f76cb095bae840d95a2026014d92fe9
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
@@ -1036,6 +1016,10 @@ vendor/firmware/aw8624_rtp_1.bin
 vendor/firmware/drv2624.bin
 vendor/firmware/drv2624.rtp
 
+# VPP
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so
+
 # WiFi
 vendor/bin/cnss-daemon
 
@@ -1082,7 +1066,6 @@ vendor/etc/seccomp_policy/wfdvndservice.policy
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy
 vendor/etc/wfdconfig.xml
 vendor/lib/libFileMux_proprietary.so
-vendor/lib/libOmxVideoDSMode.so;DISABLE_CHECKELF
 vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
 vendor/lib/libmmrtpdecoder_proprietary.so
