@@ -62,6 +62,10 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc)
             sed -i "s/4\.0/4\.1/g" "${2}"
             ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            [ "$2" = "" ] && return 0
+            echo 'gettid: 1' >> ${2}
+            ;;
         vendor/lib64/camera/components/com.qti.node.watermark.so)
             grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
