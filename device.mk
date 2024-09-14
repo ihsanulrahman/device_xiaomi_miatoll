@@ -464,6 +464,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     TimeKeep
 
+# Update
+AB_OTA_UPDATER := false
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.dual_role_usb \
