@@ -214,6 +214,9 @@ ro.netflix.bsp_rev=Q6250-19132-1
 media.stagefright.thumbnail.prefer_hw_codecs=true
 vendor.video.disable.ubwc=1
 
+# Multi-gen LRU
+persist.device_config.mglru_native.lru_gen_config=core
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
