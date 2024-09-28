@@ -184,9 +184,6 @@ vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 # DRM
 drm.service.enabled=true
 
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # Incremental FS
 ro.incremental.enable=true
 
