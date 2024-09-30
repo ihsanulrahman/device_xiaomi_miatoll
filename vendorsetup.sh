@@ -13,7 +13,7 @@ sleep 1
 # Lineage-21 Hardware Source
 echo -e "${color}Cloning Hardware & Timekeep from Lineage-21${end}"
 rm -rf hardware/xiaomi
-git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi 
+git clone https://github.com/ProjectPixelage/android_hardware_xiaomi -b 15 hardware/xiaomi 
 git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-21 hardware/sony/timekeep
 
 sleep 1
