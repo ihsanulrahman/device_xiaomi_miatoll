@@ -186,7 +186,6 @@ drm.service.enabled=true
 
 # Fingerprint
 ro.vendor.fingerprint.type=side
-ro.vendor.fingerprint.sensor_location=1080|760|100|local:4630946580317548417
 
 # Incremental FS
 ro.incremental.enable=true

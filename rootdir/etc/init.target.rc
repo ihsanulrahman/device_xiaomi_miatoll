@@ -233,3 +233,9 @@ on property:vendor.post_boot.parsed=1
 
 on property:ro.boot.multisim_config=*
     setprop persist.radio.multisim.config ${ro.boot.multisim_config}
+
+on property:ro.boot.lcmtype=dsi_nt36672c_huaxing_fhd_video_display
+    setprop ro.vendor.fingerprint.sensor_location 1080|760|100|local:4630946580317548417
+
+on property:ro.boot.lcmtype=dsi_nt36672c_tianma_fhd_video_display
+    setprop ro.vendor.fingerprint.sensor_location 1080|760|100|local:4630947024726438529
