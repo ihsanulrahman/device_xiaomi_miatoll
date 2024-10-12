@@ -509,6 +509,10 @@ PRODUCT_PACKAGES += \
     android.media.audio.common.types-V2-cpp \
     vendor.qti.hardware.display.config-V5-ndk
 
+PRODUCT_PACKAGES += \
+    libgui_shim \
+    libinput_shim
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
