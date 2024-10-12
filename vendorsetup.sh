@@ -6,7 +6,7 @@ echo -e "${color}Cloning vendor${end}"
 git clone --depth=1 -b udc https://github.com/ihsanulrahman/vendor_xiaomi_miatoll vendor/xiaomi/miatoll
 
 echo -e "${color}Cloning kernel${end}"
-git clone --depth=1 -b main https://github.com/c0smic-Lab/kernel_xiaomi_sm6250 kernel/xiaomi/sm6250
+git clone --depth=1 -b 15-kinesis https://github.com/clarencekopitiam/kernel_xiaomi_sm6250 kernel/xiaomi/sm6250
 
 sleep 1
 
