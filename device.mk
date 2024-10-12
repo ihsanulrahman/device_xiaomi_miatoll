@@ -285,7 +285,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     SM6250Aperture \
-    SM6250DeviceAsWebcam \
     SM6250Frameworks \
     SM6250Settings \
     SM6250SystemUI \
@@ -471,13 +470,11 @@ AB_OTA_UPDATER := false
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service.dual_role_usb \
-    android.hardware.usb.gadget@1.2-service-qti
+    android.hardware.usb@1.3-service.dual_role_usb
 
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    usb_compositions.conf
+    init.qcom.usb.sh
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
