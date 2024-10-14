@@ -133,6 +133,12 @@ ro.crypto.volume.options=::v2
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
+# Dex2oat
+dalvik.vm.dex2oat-cpu-set=4,5,6,7
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
+dalvik.vm.image-dex2oat-threads=4
+
 # Display
 debug.sf.enable_gl_backpressure=1
 debug.sf.frame_rate_multiple_threshold=60
