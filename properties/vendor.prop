@@ -186,7 +186,8 @@ vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 drm.service.enabled=true
 
 # Fingerprint
-ro.vendor.fingerprint.type=side
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_modules=fpc,goodix
 
 # Incremental FS
 ro.incremental.enable=true
