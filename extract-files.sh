@@ -87,7 +87,7 @@ function blob_fixup() {
             ;;
         vendor/lib64/libwvhidl.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+            grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
         system_ext/etc/init/wfdservice.rc)
             [ "$2" = "" ] && return 0
