@@ -81,13 +81,13 @@ function blob_fixup() {
             # NOP out report_input_event()
             "${SIGSCAN}" -p "30 00 00 90 11 3a 42 f9" -P "30 00 00 90 1f 20 03 d5" -f "${2}"
             ;;
-        vendor/lib64/libwvhidl.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
-            ;;
         vendor/lib64/android.hardware.camera.provider@2.4-legacy.so)
             [ "$2" = "" ] && return 0
             grep -q "libcamera_provider_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_provider_shim.so" "${2}"
+            ;;
+        vendor/lib64/libwvhidl.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
         system_ext/etc/init/wfdservice.rc)
             [ "$2" = "" ] && return 0
@@ -106,6 +106,9 @@ function blob_fixup() {
         system_ext/lib64/libwfdservice.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.media.audio.common.types-V2-cpp.so" "android.media.audio.common.types-V3-cpp.so" "${2}"
+            ;;
+        *)
+            return 1
             ;;
     esac
 
