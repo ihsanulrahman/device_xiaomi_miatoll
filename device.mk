@@ -96,9 +96,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.atoll \
     vendor.qti.hardware.display.allocator-service
 
-# Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey

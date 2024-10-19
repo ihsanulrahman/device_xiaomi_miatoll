@@ -18,12 +18,9 @@ git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage
 
 sleep 1
 
-# Miui Camera & OP Dolby 
+# Miui Camera 
 echo -e "${color}Cloning Miui Camera${end}"
-git clone https://github.com/ihsanulrahman/vendor_xiaomi_miuicamera --depth=1 vendor/xiaomi/miuicamera
+git clone -b 15 https://github.com/ihsanulrahman/vendor_xiaomi_miuicamera --depth=1 vendor/xiaomi/miuicamera
 bash vendor/xiaomi/miuicamera/vendorsetup.sh
 
-echo -e "${color}Cloning OP Dolby${end}"
-git clone https://github.com/veux-frost-testzone/hardware_dolby hardware/dolby
-
-sleep 3
+sleep 1
