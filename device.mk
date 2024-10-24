@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/sm6250-common/atoll.mk)
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
 
+# Sign keys
+$(call inherit-product-if-exists, vendor/voltage-priv/keys/keys.mk)
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
