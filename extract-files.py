@@ -12,7 +12,6 @@ from extract_utils.main import (
 module = ExtractUtilsModule(
     'miatoll',
     'xiaomi',
-    check_elf=True,
 )
 
 if __name__ == '__main__':
