@@ -62,6 +62,8 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('30 00 00 90 11 3A 42 F9', '30 00 00 90 1F 20 03 D5'),
     'vendor/lib64/android.hardware.camera.provider@2.4-legacy.so': blob_fixup()
         .add_needed('libcamera_provider_shim.so'),
+    'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
+        .replace_needed('libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'),
     'system_ext/etc/init/wfdservice.rc': blob_fixup()
         .regex_replace(r'(start|stop) wfdservice\b', r'\1 wfdservice64'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
