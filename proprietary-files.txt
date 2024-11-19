@@ -3,7 +3,6 @@
 # vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 
 # Current blobs with ELF checks disabled:
-# com.qti.chi.override, libmialgoengine depend on libgrallocutils, which is a gnu makefile target
 # imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
 # libOmxVideoDSMode depend on libOmxCore, which is a gnu makefile target
 # libalLDC, libalhLDC, libalAILDC depend on NDK libnativewindow and build is unable to resolve its symbols
@@ -115,7 +114,7 @@ vendor/lib/libbluetooth_audio_session_qti_2_1.so
 
 # Camera
 vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so;DISABLE_CHECKELF
+vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libFaceGrade.so
 vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libSNPE.so
@@ -162,7 +161,7 @@ vendor/lib64/libmialgo_fs.so
 vendor/lib64/libmialgo_rfs.so;DISABLE_CHECKELF
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
-vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
+vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_712.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libremosaic_wrapper.so
