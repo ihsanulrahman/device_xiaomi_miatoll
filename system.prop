@@ -1,6 +1,9 @@
 # Audio
 audio.offload.min.duration.secs=30
 
+# Blur
+ro.launcher.blur.appLaunch=0
+
 # Camera
 persist.sys.cam.skip_detach_image=true
 
