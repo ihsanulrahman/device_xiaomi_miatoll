@@ -5,8 +5,6 @@
 # Current blobs with ELF checks disabled:
 # imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
 # libOmxVideoDSMode depend on libOmxCore, which is a gnu makefile target
-# libalLDC, libalhLDC, libalAILDC depend on NDK libnativewindow and build is unable to resolve its symbols
-# libhvx_interface, libmialgo_rfs, libVDSuperPhotoAPI, libsnpe_dsp_domains_v2 depend on libsdsprpc and build is unable to resolve its symbols
 
 # ACDB
 vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Bluetooth_cal.acdb
@@ -121,13 +119,13 @@ vendor/lib64/libSNPE.so
 vendor/lib64/libSuperSensor.so
 vendor/lib64/libSuperSensorCPU.so
 vendor/lib64/libVDClearShot.so
-vendor/lib64/libVDSuperPhotoAPI.so;DISABLE_CHECKELF
+vendor/lib64/libVDSuperPhotoAPI.so
 vendor/lib64/libXMFD_AgeGender.so
 vendor/lib64/lib_denoiser3.so
-vendor/lib64/libalAILDC.so;DISABLE_CHECKELF
+vendor/lib64/libalAILDC.so
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so;DISABLE_CHECKELF
-vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalLDC.so
+vendor/lib64/libalhLDC.so
 vendor/lib64/libarcsat.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_bodyslim.so
@@ -158,7 +156,7 @@ vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmiai_supernight.so
 vendor/lib64/libmialgo_basic.so
 vendor/lib64/libmialgo_fs.so
-vendor/lib64/libmialgo_rfs.so;DISABLE_CHECKELF
+vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgoengine.so
@@ -168,7 +166,7 @@ vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libsdk_sr.so
 vendor/lib64/libsdsprpc.so
-vendor/lib64/libsnpe_dsp_domains_v2.so;DISABLE_CHECKELF
+vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libst_sr_models.so
 vendor/lib64/libswregistrationalgo.so
@@ -723,7 +721,7 @@ vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xm
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libhta_hexagon_runtime.so
-vendor/lib64/libhvx_interface.so;DISABLE_CHECKELF
+vendor/lib64/libhvx_interface.so
 vendor/lib64/libnpu.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
