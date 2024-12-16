@@ -60,8 +60,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libpiex_shim.so'),
     'vendor/lib64/hw/fingerprint.fpc.default.so': blob_fixup()
         .sig_replace('30 00 00 90 11 3A 42 F9', '30 00 00 90 1F 20 03 D5'),
-    'vendor/lib64/android.hardware.camera.provider@2.4-legacy.so': blob_fixup()
-        .add_needed('libcamera_provider_shim.so'),
     'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
         .replace_needed('libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'),
     'vendor/lib64/libwvhidl.so': blob_fixup()
