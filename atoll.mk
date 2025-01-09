@@ -75,6 +75,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     disable_configstore \
+    gralloc.qcom \
     hwcomposer.qcom \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.memtrack-service
