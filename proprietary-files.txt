@@ -1,5 +1,4 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
-# moonstone: OS1.0.5.0.UMPMIXM (MOONSTONEGlobal)
 # sunstone: OS1.0.9.0.UMQMIXM (SUNSTONEGlobal)
 # vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 
@@ -1039,7 +1038,7 @@ vendor/firmware/drv2624.rtp
 # WiFi
 vendor/bin/cnss-daemon
 
-# WiFi Display (system) - from moonstone
+# WiFi Display (system) - from sunstone
 system/framework/WfdCommon.jar|08bf9850ac45396fe753e208c4d63ec43389dce2
 system_ext/bin/wfdservice64|77de5e319297d09b29712160ed0a9dbdced58911
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c|3dfd29a44f37c971b7707b6e47b2b601a9119d12
@@ -1047,18 +1046,18 @@ system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|10dcd4e58f
 system_ext/etc/seccomp_policy/wfdservice64.policy|1e331272649395423b11c575892e0bdc9433b820
 system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
 system_ext/lib64/libmmosal.so|a1a2875522a7b4daf346bf26c66bcbc793c8810b
-system_ext/lib64/libmmparser_lite.so|f4ceee2ec480bbfa55e76412a0fb19e6e38fbe9f
+system_ext/lib64/libmmparser_lite.so|afd7b441e1bce732c14f5f8f49821d43bb2ee791
 system_ext/lib64/libmmrtpdecoder.so|0da526d51135ea58236ab6bcc2d1b7484931df24
 system_ext/lib64/libmmrtpencoder.so|fafe00d1ed3d691c6d2c2d963144218764cad5ae
 system_ext/lib64/libwfdavenhancements.so|9c763b45dd5fe7c52fad420a21d215b31c5e34d5
 system_ext/lib64/libwfdclient.so|0070b1e88cee6ebaf17dcb02c2706232cc087071
 system_ext/lib64/libwfdcommonutils.so|14b3bd86703f2aca0abb1232d2304e626c1af644
-system_ext/lib64/libwfdconfigutils.so|ea96ed22dbb0e89dafee42829015acf95f9a17e1
+system_ext/lib64/libwfdconfigutils.so|ce60fa01bfb684bb8d993f57edb7854c86fa6003
 system_ext/lib64/libwfddisplayconfig.so|5fd7bf7abaedfe890442f88183c49755b25c39aa
 system_ext/lib64/libwfdmminterface.so|3f16acefbe87741a5841c1c70cf74ff917299c4c
 system_ext/lib64/libwfdmmsink.so|8150b750357b606475521b491f78d566673f9888
-system_ext/lib64/libwfdmmsrc_system.so|549dc8ea93308bf2a5e3c32eaca3677e436ac62f|658823365c8c7ffeca808b0dd570380b415ea658
-system_ext/lib64/libwfdnative.so|a51ea34b7287a186974cc4535a821c2183d030d4|65003ac0b210da5f99dc5329b6dcdb00ea98b451
+system_ext/lib64/libwfdmmsrc_system.so|549dc8ea93308bf2a5e3c32eaca3677e436ac62f|12efaad1a3614fe13969ebf4e15d1b405b11a0a5
+system_ext/lib64/libwfdnative.so|fd5284de5f87e838e751eb5530a4b4e26c3f3de1|f24e817ac742f88215296518666feb0d39cd6310
 system_ext/lib64/libwfdrtsp.so|8181e44d7c1f722218fabd8fe3bf788454a3f586
 system_ext/lib64/libwfdservice.so|a993e338de3e06733186f69f91486520599a727c|33a796a4f7fff7c16d6c7d0ed66f85866d85c7ce
 system_ext/lib64/libwfdsinksm.so|c4d68ecbe0accd24296c18444e5a82b6a24be8d8
