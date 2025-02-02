@@ -21,8 +21,4 @@ rm -rf hardware/xiaomi
 git clone https://github.com/ihsanulrahman/hardware_xiaomi -b 15 hardware/xiaomi 
 git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-22.0 hardware/sony/timekeep
 
-# Miui Camera
-echo -e "${color}Cloning Miui Camera${end}"
-git clone -b 15 https://github.com/ihsanulrahman/vendor_xiaomi_miuicamera vendor/xiaomi/miuicamera
-
 sleep 1
