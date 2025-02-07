@@ -187,6 +187,7 @@ ro.hardware.keystore_desede=true
 ro.netflix.bsp_rev=Q6250-19132-1
 
 # Media
+debug.stagefright.c2inputsurface=-1
 vendor.video.disable.ubwc=1
 
 # Perf
