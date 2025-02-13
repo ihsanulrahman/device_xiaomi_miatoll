@@ -232,7 +232,7 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/dirty_writeback_centisecs 6000
     write /proc/sys/vm/drop_caches 6
     write /proc/sys/vm/stat_interval 10
-    write /proc/sys/vm/swappiness 100
+    write /proc/sys/vm/swappiness 60
     write /proc/sys/vm/swap_ratio_enable 1
     write /proc/sys/vm/swap_ratio 100
     write /proc/sys/vm/vfs_cache_pressure 100
