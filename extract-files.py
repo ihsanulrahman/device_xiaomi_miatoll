@@ -28,10 +28,14 @@ namespace_imports = [
     'vendor/qcom/opensource/display',
 ]
 
-
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
-    return f'{lib}_{partition}' if partition == 'vendor' else None
+    if partition.startswith('_'):
+        partition = partition[1:]  # Remove leading underscore
 
+    if partition not in ('vendor', 'system'):
+        return None
+
+    return f'{lib}_{partition}'
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
