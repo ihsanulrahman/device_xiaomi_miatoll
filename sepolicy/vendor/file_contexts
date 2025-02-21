@@ -17,6 +17,9 @@
 # IR
 /dev/spidev0.1                                                                u:object_r:lirc_device:s0
 
+# Media (Dolby Codec2)
+/vendor/bin/hw/vendor\.dolby\.media\.c2@1\.0-service            u:object_r:mediacodec_exec:s0
+
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                              u:object_r:persist_subsys_file:s0
 

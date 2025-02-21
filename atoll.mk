@@ -151,6 +151,22 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     $(LOCAL_PATH)/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0 \
+    android.hardware.media.c2@1.1 \
+    android.hardware.media.c2@1.2 \
+    android.hardware.media.c2@1.0.vendor \
+    android.hardware.media.c2@1.2.vendor \
+    android.hardware.media.c2@1.2.vendor
+
+PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.0 \
+    libcodec2_hidl@1.1 \
+    libcodec2_hidl@1.2 \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \

@@ -82,6 +82,12 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'(start|stop) wfdservice\b', r'\1 wfdservice64'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
+    ### Dolby Codec2 (cancunf) Start ###
+    ('vendor/lib64/libcodec2_soft_ac4dec.so', 'vendor/lib64/libcodec2_soft_ddpdec.so', 'vendor/lib64/libdeccfg.so'): blob_fixup()
+        .replace_needed('vendor.dolby.hardware.dms@2.0.so', 'vendor.dolby.hardware.dms@2.0-v34_cancunf.so')
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v34_cancunf.so')
+        .replace_needed('libdapparamstorage.so', 'libdapparamstorage-v34_cancunf.so'),
+    ### Dolby Codec2 (cancunf) End ###
 }  # fmt: skip
 
 module = ExtractUtilsModule(
