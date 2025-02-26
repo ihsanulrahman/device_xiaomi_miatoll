@@ -1,0 +1,5 @@
+# Motorola Dolby
+ro.vendor.audio.moto_sst_supported    u:object_r:exported_system_prop:s0
+ro.vendor.dolby.no_custom_profile     u:object_r:exported_system_prop:s0
+ro.hardware.soc.manufacturer          u:object_r:exported_system_prop:s0
+persist.vendor.audio.dolby.tws_tuning          u:object_r:exported_system_prop:s0
