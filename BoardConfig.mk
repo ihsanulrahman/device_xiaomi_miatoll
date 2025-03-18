@@ -11,7 +11,6 @@ DEVICE_PATH := device/xiaomi/miatoll
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_miatoll
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_miatoll
 
 # MiuiCamera
 -include vendor/xiaomi/miuicamera/BoardConfigMiuiCamera.mk
