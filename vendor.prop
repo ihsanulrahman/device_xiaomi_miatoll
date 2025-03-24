@@ -166,6 +166,8 @@ vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 persist.vendor.audio_fx.current=dolby
 ro.hardware.soc.manufacturer=qcom
 ro.vendor.audio.dolby.dax.support=true
+ro.vendor.dolby.dax.version=DAX3_3.11.0.10_r2
+persist.vendor.audio.dolby.tws_tuning=true
 
 # DRM
 drm.service.enabled=true
