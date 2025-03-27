@@ -434,4 +434,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- End of Volume section -->
 
+    <!-- Surround Sound configuration -->
+
+    <xi:include href="/vendor/etc/surround_sound_configuration_5_0.xml"/>
+
+    <!-- End of Surround Sound configuration -->
+
 </audioPolicyConfiguration>
