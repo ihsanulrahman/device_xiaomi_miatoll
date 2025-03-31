@@ -424,6 +424,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <!-- Bluetooth Audio HAL -->
         <xi:include href="/vendor/etc/bluetooth_audio_policy_configuration_7_0.xml"/>
 
+        <!-- A2dp Audio HAL -->
+        <xi:include href="/vendor/etc/a2dp_audio_policy_configuration_7_0.xml"/>
+
     </modules>
     <!-- End of Modules section -->
 
