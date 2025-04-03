@@ -303,6 +303,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
        ro.audio.spatializer_transaural_enabled_default=false \
        persist.vendor.audio.spatializer.speaker_enabled=true
 
+# Spatial Audio: Enable virtualization effect for the ordinary sound output (More immersiveness)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.audio.monitorRotation=true \
+    ro.audio.stereo_spatialization_enabled=true
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
