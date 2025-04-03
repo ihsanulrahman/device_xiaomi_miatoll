@@ -88,6 +88,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v34_cancunf.so')
         .replace_needed('libdapparamstorage.so', 'libdapparamstorage-v34_cancunf.so'),
     ### Dolby Codec2 (cancunf) End ###
+    ### Dolby Equalizer (rhode) Start ###
+    ('vendor/lib64/libdlbdsservice.so'): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v32_rhode.so'),
+    ### Dolby Equalizer (rhode) End ###
 }  # fmt: skip
 
 module = ExtractUtilsModule(

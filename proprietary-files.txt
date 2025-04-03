@@ -4,6 +4,7 @@
 # excalibur: V14.0.2.0.SJXINXM (EXCALIBURINGlobal)
 # joyeuse: V14.0.3.0.SJZMIXM (JOYEUSEGlobal)
 # mojito: V14.0.9.0.SKGMIXM (MOJITOGlobal)
+# rhodei: user-12-S2SSIS32.18-12-4-6-893cc5-release-keys
 # vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 
 # ACDB
@@ -466,6 +467,22 @@ vendor/lib64/libcvp.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
+
+# Dolby
+system/lib/libstagefright_foundation.so:vendor/lib/libstagefright_foundation-v32_rhode.so;FIX_SONAME
+system/lib64/libstagefright_foundation.so:vendor/lib64/libstagefright_foundation-v32_rhode.so;FIX_SONAME
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/lib/libdapparamstorage.so
+vendor/lib/soundfx/libswdap.so
+vendor/lib/soundfx/libswgamedap.so
+vendor/lib/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
 # DPM (system) - from dodge
 system_ext/bin/dpmd|9dc27f51645a8aaf80ad91347e69c2b0e846170c

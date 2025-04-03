@@ -162,6 +162,11 @@ vendor.display.qdcm.mode_combine=1
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
+# Dolby
+persist.vendor.audio_fx.current=dolby
+ro.hardware.soc.manufacturer=qcom
+ro.vendor.audio.dolby.dax.support=true
+
 # DRM
 drm.service.enabled=true
 
