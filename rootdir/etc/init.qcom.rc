@@ -168,12 +168,11 @@ on boot
     # Create pa-cal driver directory lct-20181009
     mkdir /mnt/vendor/persist/audio 0770 audio audio
 
-# msm specific files that need to be created on /data
-on post-fs
-    # Apply dolby fix
-    start init-dolby_fix-sh
-    
+# msm specific files that need to be created on /data    
 on post-fs-data
+    # Dolby
+    start vendor.init-dolby_fix-sh
+
     mkdir /data/vendor/misc 01771 system system
 
     # Create directory used by display clients
@@ -394,8 +393,9 @@ service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@
     task_profiles ServiceCapacityLow
     socket pps stream 0660 system system
 
-service init-dolby_fix-sh /vendor/bin/init.dolby_fix.sh
+service vendor.init-dolby_fix-sh /vendor/bin/init.dolby_fix.sh
     class main
-    user system
-    group system
+    user media
+    group media
+    disabled
     oneshot

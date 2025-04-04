@@ -82,8 +82,12 @@ PRODUCT_PACKAGES += \
 # Dolby
 TARGET_USES_DOLBY := true
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/init.dolby_fix.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.dolby_fix.sh
+
 PRODUCT_PACKAGES += \
-    XiaomiDolby
+    XiaomiDolby \
+    XiaomiDolbyResCommon
 
 # DRM
 PRODUCT_PACKAGES += \
