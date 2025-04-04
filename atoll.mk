@@ -295,7 +295,7 @@ PRODUCT_COPY_FILES += \
 
 # Spatial Audio: optimize spatializer effect
 PRODUCT_PROPERTY_OVERRIDES += \
-       audio.spatializer.effect.util_clamp_min=300
+       audio.spatializer.effect.util_clamp_min=335
 
 # Spatial Audio: declare use of spatial audio
 PRODUCT_PROPERTY_OVERRIDES += \
