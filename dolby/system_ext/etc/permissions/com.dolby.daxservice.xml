@@ -17,6 +17,7 @@
         <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="android.permission.MODIFY_DEFAULT_AUDIO_EFFECTS"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
         <permission name="android.permission.QUERY_AUDIO_STATE"/>
         <permission name="android.permission.BLUETOOTH_CONNECT" />
         <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>

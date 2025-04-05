@@ -1,6 +1,6 @@
 android_app_import {
     name: "daxService",
-    owner: "motorola",
+    owner: "Lenovo",
     apk: "system_ext/priv-app/daxService/daxService.apk",
     certificate: "platform",
     dex_preopt: {
@@ -11,13 +11,14 @@ android_app_import {
 }
 
 android_app_import {
-    name: "MotoDolbyDax3",
-    owner: "motorola",
-    apk: "system/priv-app/MotoDolbyDax3/MotoDolbyDax3.apk",
+    name: "DaxUI",
+    owner: "Lenovo",
+    apk: "system_ext/priv-app/DaxUI/DaxUI.apk",
     certificate: "platform",
     overrides: ["MusicFX"],
     dex_preopt: {
         enabled: false,
     },
     privileged: true,
+    system_ext_specific: true,
 }

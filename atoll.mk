@@ -84,18 +84,18 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
     $(LOCAL_PATH)/dolby/dax-moto_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_1.xml \
     $(LOCAL_PATH)/dolby/dax-moto_2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_2.xml
-# MotoDolbyDax3 Permissions & Sysconfig
+# Lenovo Permissions & Sysconfig
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/dolby/system/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml \
-    $(LOCAL_PATH)/dolby/system/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml
-# Motorola daxservice Permissions & Sysconfig
+    $(LOCAL_PATH)/dolby/system_ext/etc/permissions/privapp-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxappui.xml \
+    $(LOCAL_PATH)/dolby/system_ext/etc/sysconfig/config-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxappui.xml
+# Lenovo daxservice Permissions & Sysconfig
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/dolby/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
     $(LOCAL_PATH)/dolby/system_ext/etc/sysconfig/hiddenapi-whitelist-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.dolby.daxservice.xml
 # Build Motorola Dolby tuning
 PRODUCT_PACKAGES += \
     daxService \
-    MotoDolbyDax3
+    DaxUI
 
 # DRM
 PRODUCT_PACKAGES += \
