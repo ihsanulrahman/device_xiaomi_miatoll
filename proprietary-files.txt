@@ -93,6 +93,12 @@ vendor/lib/soundfx/libshoebox.so
 # Audio (Spatial audio) - from cheetah-user-15-AP3A.241005.015-12366759-release-keys
 vendor/lib/soundfx/libspatialaudio.so|1b574e25db97b76b712ddffda6da42c3c5c5df6e
 
+# Audio (Spatial audio tuning) - from camito device tree (android-15.0.0_r36)
+vendor/etc/spatializer/base
+vendor/etc/spatializer/mode_2_ch
+vendor/etc/spatializer/mode_6_ch
+vendor/etc/spatializer/mode_xaural
+
 # Battery
 vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
