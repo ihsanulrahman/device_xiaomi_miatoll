@@ -301,7 +301,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
        ro.audio.spatializer_enabled=true \
        ro.audio.spatializer_binaural_enabled_default=true \
-       ro.audio.spatializer_transaural_enabled_default=true \
+       ro.audio.spatializer_transaural_enabled_default=false \
        persist.vendor.audio.spatializer.speaker_enabled=true
 
 # Spatial Audio: Enable virtualization effect for the ordinary sound output (More immersiveness)
