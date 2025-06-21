@@ -307,7 +307,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Spatial Audio: Enable virtualization effect for the ordinary sound output (More immersiveness)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.audio.monitorRotation=true \
-    ro.audio.stereo_spatialization_enabled=true
+    ro.audio.stereo_spatialization_enabled=true \
+    ro.audio.headtracking_enabled=true
+
 
 # Telephony
 PRODUCT_PACKAGES += \
