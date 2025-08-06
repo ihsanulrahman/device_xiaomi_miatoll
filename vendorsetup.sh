@@ -11,15 +11,15 @@ git clone --depth=1 -b 15 https://github.com/ihsanulrahman/vendor_xiaomi_miatoll
 git clone --depth=1 -b 15 https://github.com/ihsanulrahman/vendor_xiaomi_sm6250-common vendor/xiaomi/sm6250-common
 
 echo -e "${color}Cloning kernel${end}"
-git clone --depth=1 -b nonksu https://github.com/ihsanulrahman/android_kernel_xiaomi_sm6250 kernel/xiaomi/sm6250
+git clone --depth=1 -b 16 https://github.com/ihsanulrahman/android_kernel_xiaomi_sm6250 kernel/xiaomi/sm6250
 
 sleep 1
 
 # Hardware Sources
 echo -e "${color}Cloning Hardware & Timekeep ${end}"
 rm -rf hardware/xiaomi
-git clone https://github.com/ihsanulrahman/hardware_xiaomi -b 15 hardware/xiaomi 
-git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-22.0 hardware/sony/timekeep
+git clone https://github.com/ihsanulrahman/hardware_xiaomi -b 16 hardware/xiaomi 
+git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-22.2 hardware/sony/timekeep
 
 # Miui Camera
 echo -e "${color}Cloning Miui Camera${end}"
