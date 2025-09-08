@@ -203,10 +203,8 @@ PRODUCT_PACKAGES += \
     MiatollSettings \
     MiatollSystemUI \
     MiatollTelephony \
-    MiatollWifi
-
-PRODUCT_PACKAGES += \
-    SM6250Aperture
+    MiatollWifi \
+    SM6250Aperture 
 
 # Partitions
 PRODUCT_PACKAGES += \
