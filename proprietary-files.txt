@@ -354,24 +354,24 @@ vendor/lib64/camera/com.qti.tuned.ofilm_gc02m1_filter.bin|927226cb05dafdfec698cd
 vendor/lib64/camera/com.qti.tuned.ofilm_s5kgm2.bin|1fde3bcf11e58f75d1412136689f1641066b726e
 vendor/lib64/camera/com.qti.tuned.sunny_imx582.bin|ebf967f5d8efe514446415c4560075d67fda1be7
 
-# Camera sensors (curtana & joyeuse)
-vendor/lib64/camera/com.qti.sensormodule.sunny_hi556.bin
-vendor/lib64/camera/com.qti.tuned.sunny_hi556.bin
+# Camera sensors (curtana & joyeuse) - from joyeuse
+vendor/lib64/camera/com.qti.sensormodule.sunny_hi556.bin|699854c027d805565ca93fc5f0f9161e83bd7c63
+vendor/lib64/camera/com.qti.tuned.sunny_hi556.bin|afb36797ed415f294adf859332a5f1c600df86fb
 
-# Camera sensors (excalibur & joyeuse)
-vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgw1.bin
-vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgw1_mirrorflip.bin
-vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1.bin
-vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1_mirrorflip.bin
-vendor/lib64/camera/com.qti.tuned.sunny_gc02m1.bin
-vendor/lib64/camera/com.qti.tuned.sunny_s5kgw1.bin
+# Camera sensors (excalibur & joyeuse) - from joyeuse
+vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgw1.bin|d7d7d51d436d46da23bb985982151cc3595e0634
+vendor/lib64/camera/com.qti.sensormodule.ofilm_s5kgw1_mirrorflip.bin|5f980c2f9520998ac0b53c938d4ce2c952c4c80b
+vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1.bin|98a20d97d7babb7aab1406d5a6b0a3d7cfeeae41
+vendor/lib64/camera/com.qti.sensormodule.sunny_s5kgw1_mirrorflip.bin|8e170a3952e7032f8354e9f148893b2a24fc2e7d
+vendor/lib64/camera/com.qti.tuned.sunny_gc02m1.bin|6da95663bb077bde61ff4f6d714590f952ee6267
+vendor/lib64/camera/com.qti.tuned.sunny_s5kgw1.bin|bf89cf6c63d33370f1762bd3a55365a3750055ac
 
 # Camera sensors (excalibur) - from excalibur
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov32a1q.bin|a6f8e2da547f15d315412f81c58d4ba6888641d5
 vendor/lib64/camera/com.qti.tuned.sunny_ov32a1q.bin|832fb5849953dd173de82589fbadddeb0eae6e7a
 
-# Camera sensors (joyeuse)
-vendor/lib64/camera/com.qti.tuned.ofilm_s5kgw1.bin
+# Camera sensors (joyeuse) - from joyeuse
+vendor/lib64/camera/com.qti.tuned.ofilm_s5kgw1.bin|4994082692a72eb45a5ea47026ad1a7e6abbc954
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -791,11 +791,11 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# NFC (joyeuse)
-vendor/etc/libnfc-nci.conf
-vendor/etc/libnfc-nxp.conf
-vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
-vendor/libnfc-nxp_RF.conf
+# NFC - from joyeuse
+vendor/etc/libnfc-nci.conf|0e5f04c87158941ce484a58174c96919ae92a501
+vendor/etc/libnfc-nxp.conf|cff1a68e333bd6c740de1165248c3ec4a41d1bde
+vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so|a8e29cc3ebb2e0df0fb505fc2da9c69a015680fb
+vendor/libnfc-nxp_RF.conf|4c758c560873efa415f6e569132cdf6d5bfe60de
 
 # Permissions
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
