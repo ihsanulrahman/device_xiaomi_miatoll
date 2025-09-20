@@ -369,11 +369,6 @@ service charger_monitor /system/bin/charger_monitor
     group root
     disabled
 
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
-    class core
-    user root
-    group root
-
 on charger
     setprop persist.sys.usb.config mass_storage
 
