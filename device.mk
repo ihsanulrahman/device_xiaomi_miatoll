@@ -11,7 +11,7 @@ $(call inherit-product, device/xiaomi/sm6250-common/atoll.mk)
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_miatoll)
 
 # MiuiCamera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-miatoll/MiuiCamera.mk)
 
 # NFC
 PRODUCT_PACKAGES += \

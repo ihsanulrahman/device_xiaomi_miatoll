@@ -10,7 +10,7 @@ include device/xiaomi/sm6250-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/miatoll
 
 # MiuiCamera
--include vendor/xiaomi/miuicamera/BoardConfigMiuiCamera.mk
+-include vendor/xiaomi/miuicamera-miatoll/BoardConfigMiuiCamera.mk
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse,miatoll
