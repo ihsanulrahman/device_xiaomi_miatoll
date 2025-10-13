@@ -568,4 +568,8 @@
     <string name="config_cpu_temp_path">/sys/class/thermal/thermal_zone0/temp</string>
     <integer name="config_sysCPUTempMultiplier">1000</integer>
     <integer name="config_sysBatteryTempMultiplier">1</integer>   
+
+    <!-- Switch to AVC 3.1 for screen recording. -->
+    <string name="config_screenRecorderAVCProfileLevel" translatable="false">3.1</string>
+
 </resources>
