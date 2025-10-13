@@ -180,6 +180,9 @@ PRODUCT_COPY_FILES += \
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
 
+# Miuicamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-miatoll/MiuiCamera.mk)
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
