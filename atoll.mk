@@ -187,6 +187,9 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor
 
+# Miuicamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-miatoll/MiuiCamera.mk)
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
