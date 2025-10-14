@@ -169,10 +169,6 @@ on boot
     mkdir /mnt/vendor/persist/audio 0770 audio audio
 
 # msm specific files that need to be created on /data
-on post-fs
-    # Apply dolby fix
-    start init-dolby_fix-sh
-    
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
 
@@ -388,9 +384,3 @@ service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@
     onrestart restart surfaceflinger
     task_profiles ServiceCapacityLow
     socket pps stream 0660 system system
-
-service init-dolby_fix-sh /vendor/bin/init.dolby_fix.sh
-    class main
-    user system
-    group system
-    oneshot
