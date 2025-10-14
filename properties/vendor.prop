@@ -15,6 +15,8 @@ ro.hardware.audio_amplifier=tas2562
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.adm.buffering.ms=2
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.enable.mirrorlink=false
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
@@ -175,15 +177,6 @@ persist.log.tag.b/223498680=S
 persist.log.tag.TrafficStats=S
 persist.log.tag.ContrastColorUtil=S
 persist.log.tag.OpenGLRenderer=S
-
-# Dolby Atmos
-ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
-ro.vendor.dolby.model=PAFM00
-ro.vendor.dolby.device=OP46C3
-ro.vendor.dolby.manufacturer=OPLUS
-ro.vendor.dolby.brand=OPLUS
-vendor.audio.dolby.ds2.enabled=true
-vendor.audio.dolby.ds2.hardbypass=true
 
 # DRM
 drm.service.enabled=true

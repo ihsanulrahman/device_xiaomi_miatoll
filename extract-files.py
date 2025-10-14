@@ -45,10 +45,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service': blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
-    'odm/etc/dolby/multimedia_dolby_dax_default.xml': blob_fixup()
-        .regex_replace('volume-leveler-enable value="true"', 'volume-leveler-enable value="false"'),
     'vendor/etc/camera/camxoverridesettings.txt': blob_fixup()
         .regex_replace('0x10082', '0')
         .regex_replace('0x1F', '0x0'),

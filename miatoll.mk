@@ -85,12 +85,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.memtrack-service
 
-# Dolby
-TARGET_USES_DOLBY := true
-
-PRODUCT_PACKAGES += \
-    XiaomiDolby
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
