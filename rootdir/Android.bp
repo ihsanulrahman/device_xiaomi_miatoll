@@ -5,6 +5,12 @@
 
 // Init scripts
 sh_binary {
+    name: "init.dolby_fix.sh",
+    src: "bin/init.dolby_fix.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "bin/init.qcom.early_boot.sh",
     vendor: true,
